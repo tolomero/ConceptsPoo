@@ -6,8 +6,38 @@ using System.Threading.Tasks;
 
 namespace ConceptsPoo
 {
+    //#1 crear class Date
     public class Date
     {
+        ////#2 declarar varibles a usar
+        //private int _year;
+        //private int _month;
+        //private int _day;
+
+        ////#3 contruir el constructore snipet ctor he instanciarlo
+        //public Date(int year, int month, int day)
+        //{
+        //    _year = year;
+        //    _month = CheckMonth(month);
+        //    _day = day;
+        //}
+        ////#7 crear el metodo CheckMonth
+        //private int CheckMonth(int month)
+        //{
+        //    if (month >= 1 && month <= 12)
+        //    {
+        //        return month;
+        //    }
+        //    throw new MonthException("Invalid Month");
+        //}
+
+        ////#6 se hace el overrride para que solo muestre la info date en string
+        //public override string ToString()
+        //{
+        //   return $"{_year}/{_month:00}/{_day:00}";
+
+        //}
+
         private int _year;
         private int _month;
         private int _day;
@@ -20,7 +50,7 @@ namespace ConceptsPoo
             _day = CheckDay(year, month, day);
         }
 
-   
+
 
         //toca validar si es bisiesto el year
         //en la linea 34 es donde validamos que el dia tiene q ser mayor igual a uno y que el dia se menor igual que los dias que debe tener el mes
@@ -37,7 +67,7 @@ namespace ConceptsPoo
             }
             throw new DayException("Invalid day");
 
-        } 
+        }
 
         //toca comprobar si el year es modulo de 4 multiplo y es diferente de 100 es bisiesto y si es multiplo de 400 tambien
         private bool IsLeepYear(int year)
