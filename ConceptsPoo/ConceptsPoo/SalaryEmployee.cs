@@ -4,7 +4,7 @@
     public class SalaryEmployee : Employee
     {
         public decimal Salary { get; set; }
-        public override decimal GetValueTopay()
+        public override decimal GetValueToPay()
         {
             return Salary;
         }
@@ -14,7 +14,7 @@
         //para interpolar dos veces se hace corchetes pesos "" y el numero 15 es que me ocupe 15 p[ociciones asi tenga el valor que sea
         {
             return $"{base.ToString()}" +
-                $"\n\t Value to pay.........: {$"{GetValueTopay():C2}",  20}";
+                $"\n\t Value to pay.........: {$"{GetValueToPay():C2}",  20}";
         }
     }
 }

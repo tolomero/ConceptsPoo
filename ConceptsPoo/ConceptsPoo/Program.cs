@@ -19,7 +19,7 @@ Employee employee1 = new SalaryEmployee()
 
 };
 
-Console.WriteLine(employee1); 
+//Console.WriteLine(employee1); 
 
 Employee employee2 = new CommissionEmployee()
 {
@@ -34,8 +34,76 @@ Employee employee2 = new CommissionEmployee()
 
 };
 
-Console.WriteLine(employee2);
+//Console.WriteLine(employee2);
 
+Employee employee3 = new HourlyEmployee()
+{
+    Id = 3030,
+    FirstName = "Juan",
+    LastName = "Hernandez",
+    BirthDate = new Date(2000, 7, 11),
+    HirirngDate = new Date(2021, 8, 15),
+    IsActive = true,
+    HourValue = 12356.56M,
+    Hours = 123.5F
+
+};
+
+//Console.WriteLine(employee3);
+
+Employee employee4 = new BaseCommissionEmployee()
+{
+    Id = 4040,
+    FirstName = "Bertha",
+    LastName = "Aguilar",
+    BirthDate = new Date(1950, 10, 11),
+    HirirngDate = new Date(2021, 9, 12),
+    IsActive = true,
+    Base = 860678.56M, 
+    Sales = 58000000M,
+    CommissionPercentaje = 0.015F
+
+};
+
+//Console.WriteLine(employee4);
+
+//se escribe la I para decir que va a ser una interfas se puede usar con Add o directamente con {Employee1,Employee2}
+ICollection<Employee> employees = new List<Employee>()
+{
+    employee1,employee2,employee3,employee4
+};
+
+decimal payroll = 0;
+foreach(Employee employee in employees)
+{
+    Console.WriteLine(employee);
+    payroll += employee.GetValueToPay();
+}
+ 
+Console.WriteLine("                                ===================");
+Console.WriteLine($"TOTAL                          {$"{payroll:C2}",20}");
+
+Invoice invoice1 = new Invoice()
+{
+    Description = "iphone 13",
+    Id = 1,
+    Price = 5300000M,
+    Quantity = 6
+};
+Invoice invoice2 = new Invoice()
+{
+    Description = "Carne",
+    Id = 222,
+    Price = 8000M,
+    Quantity =  17.5F
+};
+Console.WriteLine(invoice1);
+Console.WriteLine(invoice2);
+
+//employees.Add(employee1);
+//employees.Add(employee2);
+//employees.Add(employee3);
+//employees.Add(employee4);
 //#5 se llama la clase Date que creamos
 //Date? date1 = new Date(2022,2,25);
 

@@ -11,7 +11,7 @@ namespace ConceptsPoo
         public float CommissionPercentaje { get; set; }
         public decimal Sales { get; set; }
         // como no podemos operar con un decimal y un flaot nos toca ponerle (decimal para poder hacer la operación)
-        public override decimal GetValueTopay()
+        public override decimal GetValueToPay()
         {
             return Sales * (decimal)CommissionPercentaje;
         }
@@ -22,7 +22,7 @@ namespace ConceptsPoo
             return $"{base.ToString()}" +
                 $"\n\t Commision Percentaje: {$"{CommissionPercentaje:P2}", 20}" +
                 $"\n\t Ventas..............: {$"{Sales:C2}", 20}" +
-                $"\n\t Value to pay........: {$"{GetValueTopay():C2}", 20}";
+                $"\n\t Value to pay........: {$"{GetValueToPay():C2}", 20}";
         }
     }
 }

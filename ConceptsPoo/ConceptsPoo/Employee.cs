@@ -1,6 +1,6 @@
 ﻿namespace ConceptsPoo
 {
-    public abstract class Employee
+    public abstract class Employee : IPay
     {
         // para crear propiedades con el snipet prop y se crea la propiedad 
         // se le pone el camelcase para identificar el atributo parametro del metodo
@@ -13,7 +13,7 @@
         public Date HirirngDate { get; set; }
         public bool IsActive { get; set; }
 
-        public abstract decimal GetValueTopay();
+        public abstract decimal GetValueToPay();
 
         public override string ToString()
         {

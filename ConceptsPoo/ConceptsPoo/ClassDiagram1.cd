@@ -10,23 +10,54 @@
   <Class Name="ConceptsPoo.Employee">
     <Position X="5" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAACAEAAAAAAAAAEEAAAAAQAAAAAAAAAAAAEACAAAAg=</HashCode>
+      <HashCode>AAACAEAAAAAAAAAEEAAAAAQAAAAAAAAIAAAEAAAAAAg=</HashCode>
       <FileName>Employee.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="ConceptsPoo.SalaryEmployee">
-    <Position X="7.75" Y="2" Width="1.5" />
+    <Position X="7.75" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAACAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <HashCode>AAAAACAAAAAAAAAEAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
       <FileName>SalaryEmployee.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ConceptsPoo.CommissionEmployee">
-    <Position X="7.25" Y="5" Width="2" />
+    <Position X="9.5" Y="3.5" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAQAAAAAAAAAEAAAABAAAAAAAAAAAAAAAACAAAAA=</HashCode>
       <FileName>CommissionEmployee.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="ConceptsPoo.HourlyEmployee">
+    <Position X="5" Y="6" Width="1.5" />
+    <InheritanceLine Type="ConceptsPoo.Employee" FixedToPoint="true">
+      <Path>
+        <Point X="5.75" Y="4.459" />
+        <Point X="5.75" Y="5.625" />
+        <Point X="5.812" Y="5.625" />
+        <Point X="5.812" Y="6" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAEAAAAAAAAAAABAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>HourlyEmployee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConceptsPoo.BaseCommissionEmployee">
+    <Position X="9.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAIAAAAAAAAQAA=</HashCode>
+      <FileName>BaseCommissionEmployee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="ConceptsPoo.IPay">
+    <Position X="12" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>IPay.cs</FileName>
+      <NewMemberFileName>Ipay.cs</NewMemberFileName>
+    </TypeIdentifier>
+  </Interface>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>
